@@ -1,0 +1,2147 @@
+html, body {
+    /* height: 100%; */
+    background: linear-gradient(#dad0d0,#14254b) fixed ;
+    border: 0px solid transparent;
+    font-size: 1em;
+    margin: auto;
+    min-height: 100%;
+    padding: 0px 0px 0px 0px;
+    min-width: 1669px;
+}
+
+header{
+    order: 1;
+
+    display: flex;
+    height: 150px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+/* login page */
+
+.conteneur{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: whitesmoke;
+    /* background: linear-gradient(rgb(245,245,245) 92.5%, rgb(245,245,245,0) 7.5%); */
+    width: 1536px;
+    margin:auto;
+    min-height: 847px;
+}
+
+.conteneurLogin{
+    display:flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin:auto;
+    min-height: 847px;
+}
+
+.conteneurLogin header{
+    background: transparent;
+}
+
+.classFilAriane{
+    order: 2;
+    visibility: hidden;
+    background-color: #14254b;
+    color: white;
+    width: 100%;
+}
+
+.classFilAriane a{
+    color: white;
+}
+
+.classFilAriane a:hover{
+    color: #fca311;
+}
+
+.main1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    order: 2;
+    min-height:697px;
+    width: 100%;
+    text-align: center;
+}
+
+footer{
+    order: 6;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    height: 12.2732124%;
+    width: 100%;
+    padding: 0px auto 0px auto;
+    text-align: center;
+    /* background: linear-gradient(#14254b, #dad0d0) fixed; */
+    background-color: #14254b;
+    opacity: 0.98
+}
+
+#imgHeader{
+    height: 100%;
+    cursor: pointer;
+}
+
+#imgFooter{
+    max-width: 150px;
+}
+
+h4{
+    margin-top:0;
+    margin-bottom:5px;
+    text-decoration: underline;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+form{
+    display: inline-block;
+    background-color: #dad0d0;
+    width: 531px;
+    padding: 5.44522000%;
+    margin-bottom: 1.55577703%;
+    box-shadow: 10px 5px 15px #14254b;
+    border-radius: 15px 15px 15px 15px;
+    text-align: center;
+}
+
+#email, #password{
+    font-size: 17px;
+}
+
+label{
+    width: 23.4031997%;
+    float: left;
+    text-align: right;
+}
+
+.welcomeMessage{ 
+    width: 635px;
+    font-size: 1.5625em;
+    border-radius: 15px 0 0 15px;
+}
+
+#formLogin{
+    font-size: 1.5625em;
+    background: linear-gradient( #fca311,#dad0d0 );
+    width: 635px;
+    height: 520px;
+    border-radius: 0 15px 15px 0;
+}
+
+#formLogin label{
+    font-size: 23px;
+    width: 135px;
+}
+
+#formLogin button, #formLogin a{
+    font-size: 19.5px;
+}
+
+input{
+    margin-bottom: 2.10628896%;
+    width: 50.104816%;
+    height: 25px;
+}
+
+#membreLink{
+    display: block;
+    padding-bottom: 30px;
+}
+
+button{
+    padding: 5px 3px;
+    font-size: 0.9375em;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #fca311;
+}
+
+#connecter{
+    margin-left: 30.2645309%;
+}
+
+footer{
+    height: 90px;
+    width: 1536px;
+    margin:auto;
+    text-align: center;
+}
+
+.txtFooter{
+    display: inline-block;
+    text-align: center;
+    margin: 5px 30px;
+    font-size: 1em;
+    color: whitesmoke;
+}
+
+.txtFooterMain{
+    display: inline-block;
+    text-align: center;
+    margin: 5px 30px;
+    font-size: 1em;
+    color: whitesmoke;
+}
+
+#forgotPassword{
+    display: none;
+    font-size: 25px;
+    width: 700px;
+    height: 350px;
+    margin: 200px 410px;
+    text-align: center;
+    background: linear-gradient( #fca311,#dad0d0 );
+    border-radius: 10px 10px 10px 10px;
+}
+
+#forgotPassword form{
+    padding-left: 0px;
+    height: 100px;
+    padding-top: 50px;
+}
+
+#forgotPassword form label{
+    margin-left:16px;
+    font-size: 1.5rem;
+
+}
+
+#forgotPassword form button{
+    margin-left:111px;
+    width: 250px;
+    font-size: 1rem;
+}
+
+#idInfoBulle{
+    background-color: whitesmoke;
+    width: 400px;
+    height: 60px;
+    padding: 1px 5px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 17px;
+    margin: 15px 0 5px 130px;
+    display: none;
+}
+
+.close{
+    display: inline-block;
+    position: relative;
+    bottom: 45px;
+    left: 186px;
+    padding: 5px;
+    width: 10px;
+    height: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: underline;
+}
+
+#inscription {
+    flex-direction: column;
+    justify-items: center;
+    display: none;
+    width: 1000px;
+    height: auto;
+}
+
+#formInscription{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 16px auto;
+    width: 800px;
+    height: auto;
+}
+
+#formInscription span{
+    position: relative;
+    top: -6px; 
+}
+
+fieldset{
+    height: 120px;
+    width: 800px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-left:0
+}
+
+fieldset legend{
+    text-align: left;
+}
+
+#idPhoto{
+    width: 240px;
+    margin-right: 270px;
+}
+
+.classHautForm{
+    height: 50px;
+}
+
+.classHautForm input{
+    margin-right: 100px;
+}
+
+.classBasForm{
+    height: 50px;
+}
+
+.classBasForm input{
+    margin-right: 100px;
+}
+
+.classSexeForm{
+    width:700px;
+}
+
+.classSexeForm div {
+    display:inline-block;
+    position: relative;
+    left:-75px;
+}
+
+.classSexeForm input {
+    width: 20px;
+}
+
+.classSexeForm label {
+    display:inline-block;
+    margin-top: 5px;
+    margin-left: 25px;
+}
+
+.classLanguesForm div {
+    display: inline-block;
+    position: relative;
+    left: 18px;
+    margin-top: 10px;
+}
+
+.classLanguesForm label {
+    display:inline-block;
+    margin-top:17px;
+}
+
+.classLanguesForm input {
+    width: 20px;
+}
+
+#idValeurAutres{
+    width: 200px;
+    position: relative;
+    top:-7px;
+}
+
+.classAdresse div{
+    display: inline-block;
+}
+
+.classAdresse section{
+    margin-bottom: 5px;
+}
+
+.classAdresse label{
+    display:inline-block;
+    margin-right: 15px;
+}
+
+.classAdresse input{
+    display:inline-block;
+    margin-right: 15px;
+    margin-left:10px;
+}
+
+#idApp{
+    width:35px;
+}
+
+#idNumero{
+    width: 90px;
+}
+
+#idRue{
+    width:150px;
+}
+
+#idAdresse1{
+    margin-right:160px;
+    margin-bottom:15px;
+    position: relative;
+    left: 110px;
+
+}
+
+#idAdresse1 div:nth-child(3){
+    width: 259px;
+    position: relative;
+    left: -37px;
+}
+
+#idAdresse2{
+    margin-left: 100px;
+}
+
+#idLabel2{
+    width: 77px;
+    margin-left:15px;
+    padding-top: 5px;
+}
+
+#idLabelVille{
+    padding-top:5px;
+    margin-left:4px;
+}
+
+#idCodePostal{
+    position:relative;
+    width: 75px;
+}
+
+#idProvince{
+    height: 30px;
+}
+
+#idZoneAffichage{
+    background-color: #dad0d0;
+    width: 600px;
+    min-height:120px;
+    margin: 0 auto 15px auto;
+    padding: 20px 0 0 15px;
+    text-align: left;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#idInscriptionValide{
+    visibility: hidden;
+}
+
+#idZoneAffichage span{
+    color: red;
+}
+
+#idAffichagePhoto{
+    width: 100px;
+}
+
+/* -----------------------------------------main Page -------------------------------------*/
+
+#main2{
+    order: 5;
+    flex-basis: 86.85%;
+    position: relative;
+
+    margin-bottom:-5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 80% ;
+    min-height:795px;
+}
+
+#search{
+    margin-top: 15px;
+    margin-left: auto;
+    width: 780px;
+    height:32px;
+    border-radius: 8px;
+    font-size:1em;
+}
+
+#panier{
+    width: 120px;
+    height: 80px;
+    vertical-align: top;
+    margin: 5px 25px 0 0;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+#panier p{
+    margin-bottom: 0;
+    margin-top: 14px;
+}
+
+#idBullePanier{
+    background: linear-gradient( #fca311,#dad0d0 );
+    width: 180px;
+    height: 80px;
+    text-align: center;
+    position: relative;
+    bottom: 8px;
+    right: 35px;
+    border-radius: 25px;
+    display: none;
+}
+
+#idBullePanier p{
+    padding: 10px;
+    margin: 0;
+}
+
+#idCompteurPanier{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#monCompte{
+    right:155px;
+    width: 120px;
+    height: 80px;
+    vertical-align: top;
+    margin: 5px 0 0 auto;
+    font-size: 1rem;  
+    text-align: center;
+    cursor: pointer;
+}
+
+#monCompte>p{
+   margin-bottom: 0;
+}
+
+#idBulleCompte{
+    background: linear-gradient( #fca311,#dad0d0 );
+    width: 180px;
+    height: 80px;
+    text-align: center;
+    position: relative;
+    bottom: 8px;
+    right: 35px;
+    border-radius: 25px;
+    display: none;
+}
+
+#idBulleCompte p{
+    text-decoration: underline;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0;
+}
+
+#idBulleCompte p:hover{
+    text-decoration: none;
+    color: whitesmoke
+}
+
+/*Détails compte utilisateur*/
+#idMonCompte{
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    margin: 15px 50px 15px 22px;
+    padding: 15px 0 15px 0px;
+    height: 500px;
+    width: 1280px;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    order: 3;
+}
+
+#idMonCompte > div{
+    display: flex;
+    border: solid 1px black;
+    border-radius: 15px;
+    width:1000px;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.7);
+    padding: 35px 0 10px 0;
+}
+
+#idMonCompteImg{
+    order: 1;
+}
+
+#idDetailsUtilisateur{
+    display: block;
+    text-align: right;
+    margin: 0 50px;
+    font-weight: bold;
+    order: 2;
+}
+
+#imgUtilisateur{
+    background-color: green;
+    height: 210px;
+    width: 160px;
+    border-radius: 15px;
+    margin-left: 110px;
+}
+
+#idDonneesUtilisateur{
+    text-align: left;
+    order: 3;
+}
+
+/*Main content*/
+
+#imgMain{
+    background-color: lightblue;
+    max-width: 90%;
+    height: 260px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom:15px;
+    order: 1;
+}
+
+#navigation {
+    order: 4;
+    flex-basis: 13%;
+    display: inline-block;
+    
+    width: 13%;
+    height: auto;
+    margin-left: 2px;
+    margin-top: 147px;  
+}
+
+#menuNavConteneur{
+    background-color: grey;
+    background: linear-gradient(#14254b,#dad0d0);
+    border: solid 3px black;
+}
+
+nav ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    margin:0;
+}
+
+nav h2{
+    color: whitesmoke;
+}
+
+.categories {
+    background-color: lightgrey;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    padding: 15px 0 15px 10px;
+    cursor: pointer;
+}
+
+#idLivres {
+    display: none;
+    padding: 10px 0 15px 50px;
+}
+
+#idFilms {
+    display: none;
+    padding: 10px 0 15px 50px;
+}
+
+#idJeuxVideos {
+    display: none;
+    padding: 10px 0 15px 50px;
+}
+
+.sousCategories > li{
+    margin-top: 15px;
+    width:100;
+}
+
+.sousCategories li:hover{
+    color: #fca311;
+    cursor: pointer;
+}
+
+/*Carrousel*/
+
+#carrousel{
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 1000px;
+    margin: 0 auto 0 auto;
+}
+
+#carrousel div {
+    height: 400px;
+    width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+#carrousel img{
+    height: 400px;
+    width: 900px;
+}
+
+#carrousel button{
+    margin: 15px 450px;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+#carrousel p{
+    align-self: flex-start;
+    font-size: 18px;
+    margin: 5px;
+    width: 56px;
+    margin-left: 45px;
+}
+
+div p{
+    padding: 5px 0 5px 5px;
+}
+
+#populaires{
+    background-color: #fca311;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px auto;
+    order: 2;
+}
+
+#populaires p{
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#populaires a{
+    margin-bottom: 50px;
+}
+
+/*Geolocalisation*/
+
+.classContact{
+    background-color: white;
+    width: 90%;
+    min-height: 600px;
+    padding-bottom: 30px;
+    margin: 14px auto;
+    display: none;
+    text-align: center;
+    order: 3;
+}
+
+.classContact h1{
+    order:1;
+    margin: 10px auto;
+    width: 100%;
+}
+
+#idSiege{
+    order:2;
+    margin-bottom: 5px;
+    width:100%;
+}
+
+#floatingPanel{
+    order:5;
+    overflow:scroll;
+    display: none;
+    width: 500px ;
+    height: 450px;
+}
+
+#idPanel{
+    order:5;
+    margin: auto;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 500px;
+    height: 450px; 
+    background-color: whitesmoke;
+    overflow: scroll;
+    margin: 15px 15px 0 0;
+}
+
+#idPanel hr{
+  width:300px;
+  height: 0;
+}
+
+.classContact button{
+    order:6;
+    width:150px;
+    align-self: center;
+}
+
+#idMap{
+    order: 4;
+    width: 800px;
+    height:450px;
+    background-color: dimgrey;
+    flex-basis: 88%;
+    margin: 15px auto 20px auto;
+}
+/* -----------------------------------------Subcategory Selected Page -------------------------------------*/
+
+.affichageProduits{
+    display: none;
+    background-color: white;
+    width: 1280px;
+    min-height: 600px;
+    margin: 15px 50px 15px 22px;
+    padding: 15px 0 15px 0px;
+    box-sizing: border-box;
+    text-align: center;
+    order: 3;
+}
+
+.affichageProduits h1{
+    display: block;
+    flex-basis: 100%;
+    font-weight: bold;
+}
+
+.produits{
+    width: 165px;
+    height: 315px;
+    display: inline-block;
+    margin: 15px 40px;
+}
+
+.produits:hover{
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.7);
+    transform: scale(1.1);
+}
+
+.imgProduits{
+    background-color: cyan;
+    width: 112px;
+    height: 140px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.produits h3{
+    margin-top: 5px;
+    margin-bottom: 0;
+    height: 44px;
+    cursor: default;
+}
+
+.produits p{
+    margin-top: 0px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 17px;
+    cursor:default;
+}
+
+.produits > div > p:nth-of-type(3){
+    color: red;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.produits > div > p:nth-of-type(2){
+    color: grey;
+}
+
+.produits button{
+    width: 150px;
+    display: inline;
+    background-color: #fca311;
+    cursor: pointer;
+}
+
+.affichageProduits img{
+    width:112px;
+    height: 140px;
+}
+
+.construction{
+    display: none;
+}
+
+/* -----------------------------------------Product Selected Page -------------------------------------*/
+
+.pageProduits{
+    display: none;
+    flex-wrap: wrap;
+    width: 1300px;
+    height: 950px;
+    margin: 15px auto 40px;
+    box-sizing: border-box;
+    padding: 50px 0 0 40px;
+}
+
+.imgDetailProduit{
+    display: inline-block;
+    background: turquoise;
+    width: 322.5px;
+    height: 470px;
+}
+
+.imgDetailProduit img{
+    width: 322.5px;
+    height: 470px;
+}
+
+.detailProduit1{
+    display: inline-block;
+    vertical-align: top;
+    width: 370px;
+    min-height: 470px;
+    margin-left: 50px;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.detailProduit1 h1{
+    margin: 0 0 5px 0;
+}
+
+.detailProduit1 h2{
+    margin: 0;
+    font-size: 30px;
+    color:blue;
+}
+
+.detailProduit1 p:first-of-type{
+    font-weight:bold;
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.detailProduit1 p:nth-of-type(2){
+    margin: 0;
+}
+
+.detailProduit1 p:nth-of-type(3){
+    margin: 0;
+    text-align: justify;
+    font-size: 18px;
+}
+
+#idBtnDetail{
+    cursor: pointer;
+}
+
+.pageProduits span{
+    color: blue;
+}
+
+.detailProduit2{
+    background-color:white;
+    width: 1200px;
+    min-height: 300px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-top: 35px;
+    padding-left: 20px;
+    padding-top:30px;
+}
+
+.detailProduit2 h2{
+    display: inline-block;
+    vertical-align: top;
+    margin:0;
+    margin-right: 30px;
+}
+
+.details1{
+    display: inline-block;
+    height: 255px;
+    width: 150px;
+    
+}
+
+.details1 p{
+    margin: 0;
+}
+
+.details2{
+    display: inline-block;
+    height: 255px;
+    min-width: 300px;
+}
+
+.details2 p{
+    margin: 0;
+    min-width: 250px;
+    position:relative
+}
+
+.ligneProduits{
+    position: absolute;
+    border: solid 1.5px rgb(128 128 128);
+    opacity: .5;
+    width:1000px;
+    background-color: grey;
+}
+
+.pageProduits input{
+    width: 2.5em;
+}
+
+.pageProduits button{
+    width: 130px;
+}
+
+/* -----------------------------------------Cart Page -------------------------------------*/
+.classCategoriePanier{
+    display: none;
+    width: 1250px;
+    min-height: auto;
+    margin-left: 22px;
+    margin-top: 9px;
+    padding: 5px;
+    box-sizing: border-box;
+    order: 3;
+}
+
+.classPanier{
+    display: none;
+    background-color: white;
+    padding: 10px; 
+    margin: auto;
+    width: 1220px;
+    height: auto;
+}
+
+.classPanier p{
+ margin: 0;
+}
+
+.classEntetePanier{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    background-color: white;
+    height: 116px;
+    margin: 0;
+    padding-top:25px;
+    padding-left: 20px;
+}
+
+.classEntetePanier > p{
+    order: 1;
+    font-size: 25px;
+    font-weight: bold;
+    flex-basis: 60%;
+    margin-top: 5px;
+    
+}
+
+.classSousTotal {
+    order: 2;
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+#idSousTotal1{
+    margin-left: auto;
+    height: 33px;
+}
+
+
+#idSousTotal1 > p {
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+#idSousTotal2{
+    margin-left: auto;
+}
+
+#idTotalEntete{  
+    margin-left: 60px;
+    position: relative;
+    bottom: -1px;
+}
+
+.classEntetePanier div:nth-child(2) {
+    margin-left: auto;
+}
+
+.classEntetePanier div:nth-child(3) {
+    order: 3;
+    margin: 0 50px 45px auto;
+}
+
+.classEntetePanier a{
+    cursor: pointer; 
+}
+
+.classEntetePanier a:hover{
+    color: #fca311;
+}
+
+.classBtnPanier{
+    margin-left: 15px;
+    padding: 5px 20px; 
+    width: 200px; 
+    font-size: 15px; 
+    background-color: #fca311;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.classContenuPanier{
+    background-color: white;
+    position: relative;
+    min-height: 100px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.classContenuPanier span{
+    font-size: 20px;
+    position: absolute;
+    left:40%;
+    bottom: 20px;
+}
+
+.classLignePanier{
+    position: relative;
+    bottom: 2px;
+    left: 2%;
+    border: solid 2px black;
+    opacity: 1;
+    width:1160px;
+    background-color: black;  
+    border-radius: 15px;
+    height: 0;  
+}
+
+.SeparateurProduit{
+    position:absolute;
+    border: solid 1px grey;
+    opacity: .5;
+    width: 85.457%;
+    background-color: grey;
+    border-radius: 15px; 
+}
+
+.classPiedPanier{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    height: 175px;
+    margin: 0;
+    padding: 0;
+}
+
+.classPiedPanier p{
+    position: relative;
+    left: 10px;
+}
+
+.classPrixPied{
+    position: relative;
+    bottom: -1px;
+    margin-left: 15px;
+}
+
+/*Product Line in Cart*/
+
+table{
+    text-align: left;
+    border-collapse: collapse;
+    margin-left: 30px; 
+}
+
+table td{
+    padding: 20px;
+}
+
+.classLignesPanier thead th{ 
+    padding-left: 20px;
+}
+
+.classLignesPanier thead th:nth-child(1){
+    width: 8.21018062%;
+}
+
+.classLignesPanier thead th:nth-child(2){
+    width: 59.2610837%;
+}
+
+.classLignesPanier thead th:nth-child(3){
+    width: 10.0541872%;
+}
+
+.classLignesPanier thead th:nth-child(4){
+    width: 14.1888342%;
+}
+
+tbody span{
+    position: relative;
+    top:-20px;
+}
+
+#idLignePanier img{
+    background-color: pink;
+    width:62px;
+    height: 85px;
+}
+
+.classTitre{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.classPrix{
+    font-weight: bold;
+}
+
+.idInputTd3{
+    margin-bottom: 20px;
+}
+
+tbody input{
+    width: 35px; 
+    margin:5px 0 10px 15px;
+}
+
+tbody button{
+    padding: 5px 15px; 
+    position: relative;
+    top:-20px  
+}
+
+tbody img{
+    cursor: pointer;
+}
+
+.classLignesPanier tbody tr > td:nth-child(4) span{
+    font-size: 16px;
+    position: relative;
+    top: -25px;
+    left: 50px;
+    font-weight: bold;
+}
+
+.classSupprimer{  
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+.classSupprimer:hover{ 
+    color: #fca311;
+}
+
+/* ----------------finitions ----------------------*/
+#connectBtn{
+    background-color: #fca311;
+    cursor: pointer;
+}
+
+#imgWelcome{
+    height: 520px;
+    border-radius: 15px 0 0 15px;
+    width: inherit;
+}
+
+#formLogin button{
+    border-radius: 10px;
+}
+
+#idCloseForm{
+    top: -15px;
+    left: 260px;
+}
+ 
+.txtFooter a{
+    color:whitesmoke;
+ } 
+
+.txtFooterMain a{
+    color:whitesmoke;
+}
+
+.btnActualiser{
+     background-color:#fca311;
+     border-radius: 10px 10px 10px 10px;
+}
+
+#imgPanier{
+     width: 30px;
+     height: 28px;
+     margin-top:-20px;
+     margin-left:-10px;
+}
+
+#imgAccount{
+    width: 30px;
+    height: 28px;
+    margin-top:-20px;
+    margin-left:-10px;
+}
+
+#imgAccueil{
+    width: 900px;
+    height: 260px;
+}
+
+/*------------------------- Responsive design----------------------------------- */
+
+@media only screen and (min-width: 1921px){
+    body{
+        transform: scale(1);
+        transform-origin: 0 0;
+    }
+}
+
+@media only screen and (max-width: 1920px){
+    body{
+        transform: scale(1);
+        transform-origin: 0 0;
+    }
+
+    .conteneur{
+        min-width: 1110px;
+    }
+
+    #imgMain img{
+        max-width: 100%;
+        height: 260px;
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom:15px;
+    }
+
+    #menuNavConteneur{
+        min-width: 174px;
+    }
+
+    #main2{
+        height: auto;
+    }
+
+    footer{
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 1701px){
+    .conteneurLogin{
+        width: 100%;
+    }
+
+    html, body {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1574px){
+   .conteneur{
+        min-width: 100vh;
+    }
+}
+
+@media only screen and (max-width: 1421px){
+    html, body {
+        min-width: 100%;
+    
+    }
+
+    .conteneurLogin{
+        width: 100%;
+    }
+
+    .conteneur{
+       width:90vw;
+    }
+
+    
+    .welcomeMessage{
+        width: 500px;
+    }
+
+
+    #formLogin{
+        width:500px;
+    }
+
+    #formLogin form{
+        max-width: 430px; 
+    }
+
+    #main2{
+        flex-basis: 86%;
+    }
+
+    #idMonCompte{
+        width: 95%;
+        margin-left: 45px;
+    }
+
+    #idMonCompte > div{
+        width: 96%;
+    }
+
+    #idDetailsUtilisateur{
+        flex-basis: 10%;
+        margin-right: 30px;
+    }
+
+    #idDetailsUtilisateur p{
+        text-align: center;
+    }
+
+    #idDetailsUtilisateur p:nth-of-type(4){
+        width: 117px;
+    }
+
+    #idMonCompteImg{
+        margin-left: 5.817% ;
+    }
+
+    #imgUtilisateur{
+        flex-basis: 10%;
+        margin-left: 0;
+    }
+
+    .affichageProduits{
+        width: 95%;
+        margin-left: 45px;
+    }
+    
+    .produits{
+        flex-basis: 20%;
+        margin: auto;
+    }
+
+    .classCategoriePanier{
+        width: 95%;
+    }
+
+    .classPanier{
+        width: inherit;
+    }
+
+    .classLignePanier{
+        position: inherit;
+    }
+
+    #idLocaliser{
+      margin: 20px 400px; 
+      padding: 5px 30px;
+    }
+
+    #carrousel{
+        width: 100%;/**/
+    }
+
+    #carrousel div{
+        width: 100%;
+    }
+
+    .pageProduits{
+        width: 95%;
+        margin-left: 45px;
+    }
+
+    .detailProduit2{
+        display: flex;
+    }
+
+    .ligneProduits{
+        width: 75%;
+    }
+
+    .details1{
+        flex-basis: 18%;
+    }
+
+    .details2{
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 1181px){
+    .conteneur{
+        min-width: auto;
+    }
+
+    #main2{
+        order: 5;
+        flex-basis: 100%;
+        margin-bottom:-5px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 80% ;
+    }
+
+    #idFilms, #idLivres, #idJeuxVideos{
+        text-align: center;
+        padding: 0 0 15px 0;
+    }
+
+    #navigation{
+        order: 3;
+        flex-basis: 50%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #menuNavConteneur{
+        flex-direction: row;
+    }
+    
+    #idMonCompte{
+        margin: auto;
+    }
+
+    #idDetailsUtilisateur{
+        margin-left: 30px;
+    }
+
+    .affichageProduits{
+        width: 95%;
+        margin: auto;
+        padding: 0;
+        height: auto;
+    }
+
+    #navigation{
+        margin-bottom: 0;
+    }
+
+    #imgMain{
+        margin-top: 50px;
+    }
+    
+    .pageProduits{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    .conteneur{
+        width: 90%;
+    }
+
+    .welcomeMessage{
+        width: 80vw;
+    }
+
+    #imgWelcome{
+        margin-bottom: -6px;
+        border-radius: 15px 15px 0 0;
+        margin-top: 25px;
+    }
+    
+    #formLogin{
+        width:80vw;
+        border-radius: 0 0 15px 15px;
+    }
+
+    #formLogin form{
+        max-width: 430px;
+    }
+
+    #imgFooter{
+        width: 110px;
+        height: 52px;
+    }
+
+    #main2{
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+    }   
+
+    #search{
+        flex-basis: 50%;
+        order: 4;
+        margin: auto;
+    }
+
+    #panier{
+    order:3;
+    flex-basis: 15%;
+    }
+
+    #monCompte{
+        order: 2;
+        flex-basis: 15%;
+        margin: 7px 0 0 auto;
+    }
+
+    header{
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    header a{
+        order: 1;
+        width: 260px;
+        flex-basis: 30%;
+    }
+
+    #imgHeader{
+        width: inherit ;
+    }
+
+    #carrousel img{
+        height: 100%;
+        width: 80%;
+        margin: 0;
+    }
+
+    #carrousel div{
+        width: inherit;
+    }
+
+    #carrousel{
+        width: 90%;
+
+    }
+
+    #carrousel button{
+        margin: auto;
+    }
+
+    #carrousel p{
+        align-self: center;
+    } 
+
+    #idMonCompteImg{
+        margin-left: 2% ;
+    }
+    
+    #populaires{
+        display: none;
+    }
+
+    .classCategoriePanier{
+        margin: auto;
+    }
+
+    .pageProduits{
+        height: auto;
+        margin: 0 0 15px 0;
+        padding: 0;
+    }
+    
+    .detailProduit1{
+        margin-left: 10px;
+    }
+
+    .detailProduit2{
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+
+    .detailProduit2 h2{
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .details2{
+        flex-basis: 82%;
+    }
+
+    .details1{
+        height: auto;
+    }
+
+    .imgDetailProduit{
+        min-width: 20%;
+        min-height: 30%;
+    }
+
+    #idImgDetail{
+        width: 100%;
+        height: 100%;
+    }
+
+    .ligneProduits{
+        width: 87%;
+    }
+}
+
+@media only screen and (max-width: 816px){
+    .conteneurLogin{
+        width: 80%;
+    }
+
+    .conteneur{
+        width: 100%;
+    }
+
+    html, body {
+        width: 80%;
+    }
+
+    #main2{
+        height: auto;
+    }
+
+    #idMonCompte > div{
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    #idMonCompte{
+        height: auto;
+    }
+
+    #idMonCompteImg{
+        flex-basis: 100%;
+        margin-left: 0;
+    }
+    
+    #idDetailsUtilisateur{
+        flex-basis: 10%;
+        margin-left: auto;
+    }
+    
+    #idDonneesUtilisateur{
+       margin-right: 10px;
+    }
+    
+    #connecter{
+        margin: 0;
+    }
+
+    footer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        flex-basis: 100%;
+    }
+
+    .txtFooter{
+        margin-top: 15px;
+        margin-bottom: 10px;
+        width: 200px;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .txtFooterMain{
+        flex-basis: 30%;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        width: 200px;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    #main a{
+        text-align: center;
+    }
+
+    #imgUtilisateur{
+        margin: 0;
+    }
+
+    .produits{
+        margin: auto;
+    }
+
+    .classEntetePanier>p{
+        flex-basis: 100%;
+        text-align: left;
+    }
+
+    #idSousTotal1{
+        flex-basis: 100%;
+        text-align: right;
+    }
+
+    .classEntetePanier div:nth-of-type(2){
+        flex-basis: 100%;
+        margin-top: 5px;
+        text-align: right;
+    }
+
+    .SeparateurProduit{
+       width: 80%;
+    }
+
+    #idMap{
+        flex-basis: 100%;
+    }
+
+    .imgDetailProduit{
+        margin: auto;
+    }
+
+    .detailProduit1{
+        margin: auto;
+        padding-right: 0;
+    }
+
+    .details1{
+        flex-basis: 10%;
+    }
+
+    .details2{
+        flex-basis: 10%;
+    }
+
+    .details1 p{
+        width: 125px
+    }
+
+    #carrousel{
+        width: 95%;
+    }
+
+    #inscription{
+        width: 95%;     
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .conteneurLogin{
+        width: 95%;
+    }
+
+    html, body {
+        min-height: 100%;
+        padding: 0;
+        min-width: 100%;
+    }
+
+    header{
+        height: auto;
+    }
+
+    .welcomeMessage{
+        flex-basis: 100%;
+        width: inherit;
+    }
+
+    #formLogin{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        height: auto;
+    }
+
+    #formLogin form{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-self: center;
+        padding: 0;
+    
+    }
+
+    #formLogin p {
+        font-size: 20px;
+    }
+
+    #formLogin h2 {
+        font-size: 25px;
+    }
+
+    #formLogin form div{
+        display: flex;
+        flex-basis: 100%;
+        flex-direction: column;
+    }
+
+    #formLogin form div > *{
+        align-self: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #formLogin label{
+        text-align: center;
+    }
+
+    #formLogin input{
+        width:140px;
+        position: relative;
+        top: 15px;
+    }
+
+
+    #imgWelcome{
+        height: 320px;
+    }
+
+    footer{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 100%;
+    }
+
+    .txtFooter{
+        text-align: center;
+    }
+
+    .txtFooterMain{
+        text-align: center;
+    }
+
+    #main a{
+        flex-basis: 100%;
+        align-self: center;
+    }
+
+    #imgHeader{
+        order: 1;
+        align-self: center;
+        flex-basis: 50%;
+    }
+    
+    #search{
+        flex-basis: 80%;
+        order: 4;
+    }
+    
+    #panier{
+        order:3;
+        flex-basis: 55%;
+        height: auto;
+        margin: 7px 0 0 auto;
+    }
+
+    #navigation{
+        margin-top: 50px;
+        flex-basis: 100%;
+        margin: 50px 0 0 50px;
+    }
+    
+    #monCompte{
+        order: 2;
+        flex-basis: 40%;
+        height: auto;
+    }
+
+    #idBulleCompte{
+        left: 0;
+        margin: auto;
+    }
+
+    #idBullePanier{
+        left: 0;
+        margin: auto;
+    }
+
+    .classFilAriane{
+        order: 2;
+    }
+
+    #populaires{
+        width: 70%;
+        margin-top: 50px;
+    }
+
+    #carrousel div{
+        height: 250px;
+    }
+
+    #carrousel p{
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    #contactBtn{
+        position: relative;
+        bottom: 65px;
+        cursor: pointer;
+    }
+
+    #menuNavConteneur{
+        position: relative;
+        right: 15px;
+        bottom: 40px;
+    }
+
+    .produits{
+        flex-basis: 50%;
+        margin: auto;
+    }
+
+    .classLignesPanier table thead{
+        display: none;
+    }
+
+    .classLignesPanier table tbody tr{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table td{
+        text-align: center;
+    }
+
+    tbody tr > td:nth-of-type(3){
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
+    }
+
+    tbody tr > td:nth-of-type(4) span{
+        margin-right: 90px;
+    }
+    
+    #idDetailsUtilisateur{
+        margin-left: 10px;
+    }
+    
+    #idDonneesUtilisateur{
+        flex-basis: 50%;
+       margin-right: 0px;
+    }
+
+    #forgotPassword{
+        width: auto;
+    }
+
+    #forgotPassword form{
+        width: 95%;
+    }
+
+    
+
+}
+
+@media only screen and (max-width: 499px){
+    #monCompte{
+        order: 2;
+        flex-basis: 100%;
+    }
+
+    #panier{
+        order:3;
+        flex-basis: 100%;
+    }
+
+    .SeparateurProduit{
+        width: 75%;
+    }
+
+    #idTotalEntete{
+        margin-left: 15px;
+    }
+
+    .classEntetePanier{
+        padding-left: 0;
+    }
+
+    .classEntetePanier a{
+        color: blue;
+    }
+
+    .classEntetePanier>p{
+        text-align: center;
+    }
+
+    #idSousTotal1 p{
+        margin: auto;
+        width: 150px;
+    }
+
+    .classEntetePanier div:nth-of-type(2) {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .imgDetailProduit{
+        margin: auto;
+        width: inherit;
+    }
+
+    .details2{
+       text-align: left;
+       margin-left: 25px;
+    }
+
+    .details1 {
+        flex-basis: 0%;
+        width: 100px;
+    }
+
+    .details2>p{
+        width: 50%;
+        height: 21px;
+    }
+
+    .detailProduit1{
+        width: 100%;
+    }
+
+    .detailProduit2{
+        margin: 0;
+        padding: 0;
+        width: 80%;
+    }
+
+    .pageProduits{
+        width: 100%;
+    }
+
+    .ligneProduits{
+        position: relative;
+        left: 1;
+        width: 250px;
+    }
+
+    #idMonCompte > div{
+        width: 100%;
+    }
+    
+    #idDetailsUtilisateur{
+        margin: 0;
+    }
+
+    #idDetailsUtilisateur p:nth-of-type(4){
+       width: auto;
+    }
+
+    #idDonneesUtilisateur p:nth-of-type(5){
+        width: 120%;
+    }
+
+    #forgotPassword form{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 265px){
+    .conteneurLogin{
+        min-width: 265px;
+    }
+
+    .conteneur{
+        min-width: 269px;
+    }
+
+    html, body {
+        min-height: 1467px;
+        max-height: 1467px;
+        padding: 0;
+        min-width: 100%;
+    }
+
+    #main a{
+        width: inherit;
+    }
+}

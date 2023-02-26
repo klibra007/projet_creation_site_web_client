@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brooke&Co/main</title>
+        <link rel="stylesheet" href="main.css"/>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYAJRBS2BhDmB3A7OJM165YdKrAQXtsBE"></script>
+        <script src="main.js"></script>
+    </head>
+
+    <body>  
+        <div class="conteneur">
+            <header id="main">
+                <a href="main.html"><img id="imgHeader" src="Logo/logoMain.jpg"></a>
+                <input type="search" placeholder="Rechercher" name="" id="search">
+                <div id="monCompte" onmouseover="afficherBulleMain(id);" onmouseout="enleverBulleMain(id);">Mon compte 
+                    <p><img id="imgAccount" src="images/imgCompte.jpg"></p>
+                    <div id="idBulleCompte" onmouseover="afficherBulleMain();" onmouseout="enleverBulleMain();">
+                        <p id="idMesInformations" onclick="suivreFilAriane(id);">Mes informations</p>
+                        <p id="idDeconnecter" onclick='window.location.href="loginPlus.html"'>Me déconnecter</p>
+                    </div>
+                </div>
+                
+                <div id="panier" onmouseover="afficherBulleMain(id);" onmouseout="enleverBulleMain(id); "onclick="afficherFacture();  suivreFilAriane(id);">Panier (<span id="idCompteurPanier">0</span>) 
+                    <p><img id="imgPanier" src="images/imgPanier.jpg" alt=""></p>
+                    <div id="idBullePanier" onmouseover="afficherBulleMain();" onmouseout="enleverBulleMain();">
+                        <p><span id="idBulleQte">0</span> article(s)</p>
+                        <p>Total: <span id="idBulleTotal">0.00 $</span> </p>
+                    </div>
+                </div>
+            </header>
+
+        
+            <!----------------------------- Navigation Menu------------------------------------------------------------>
+            <nav id="navigation">
+                <div id="menuNavConteneur">
+                    <h2>Tous les produits</h2>
+                    <ul>
+                        <li class="categories" id="cat1" onclick="menuNav(id); suivreFilAriane(id)">Livres</li>
+                        <ul class="sousCategories" id="idLivres">
+                            <li class= "classLi" id="idL1" onclick="afficherSousCategories(id); suivreFilAriane(id);">Informatique</li>
+                            <li class="classLi" id="idL2" onclick="afficherPageConstruction(id); suivreFilAriane(id);">Littérature</li>
+                            <li class="classLi" id="idL3" onclick="afficherSousCategories(id); suivreFilAriane(id);">Géographie</li>
+                        </ul>
+                        <li class="categories" id="cat2" onclick="menuNav(id); suivreFilAriane(id);">Films</li>
+                        <ul class="sousCategories" id="idFilms">
+                            <li class="classLi" id="idF1" onclick="afficherPageConstruction(id); suivreFilAriane(id);">Sciences-fictions</li>
+                            <li class="classLi" id="idF2" onclick="afficherPageConstruction(id); suivreFilAriane(id);">Drame</li>
+                            <li class="classLi" id="idF3" onclick="afficherSousCategories(id); suivreFilAriane(id);">Comédie</li>
+                            <li class="classLi" id="idF4" onclick="afficherPageConstruction(id); suivreFilAriane(id);">Action</li>
+                        </ul>
+                        <li class="categories" id="cat3" onclick="menuNav(id); suivreFilAriane(id);">Jeux Vidéos</li>
+                        <ul class="sousCategories" id="idJeuxVideos">
+                            <li class="classLi" id="idJ1" onclick="afficherSousCategories(id); suivreFilAriane(id);">Playstation</li>
+                            <li class="classLi" id="idJ2" onclick="afficherPageConstruction(id); suivreFilAriane(id);">Xbox</li>
+                            <li class="classLi" id="idJ3" onclick="afficherPageConstruction(id); suivreFilAriane(id);">Nintendo Wii U</li>
+                        </ul>
+                    </ul>
+                </div>
+            </nav>
+
+        <!----------------------------- Fil d'ariane ------------------------------------------------------------>
+            <p class="classFilAriane">
+                Vous êtes dans :
+                <a href="#" id="idAccueil" onclick="afficherAccueil();">Accueil</a> >
+                <strong id="idPageActu">Fil d'Ariane</strong>
+            </p>
+    
+
+            <main id="main2">
+                <div id="imgMain"> <img src="images/club.jpg" alt=""></div>
+
+                <div id="populaires">
+                    <p>Produits populaires</p>
+                    <a href="#carrouselImg">Livres</a> |
+                    <a href="">Films</a> |
+                    <a href="">Jeux vidéos</a>
+                </div>
+
+                <!----------------------------- Carrousel ------------------------------------------------------------>
+                <div id="carrousel">
+                    <p>Nouveautés</p>
+                    <div>
+                        <img id="carrouselImg" src="" alt="">
+                    </div>
+
+                    <button type="button" id="contactBtn" onclick="afficherMap(); suivreFilAriane(id);">Contacts</button>
+                </div>
+
+
+                <!----------------------------- Map Page ------------------------------------------------------------>
+                <div class="classContact">
+                    <h1>Adresse du magasin</h2>
+                    <div id="idSiege"></div>
+                    <div id="idMap">Zone map</div>
+                    <div id="idPanel"></div>
+                    <div id="floatingPanel"></div>
+                    <button type="button" onclick="geolocaliser();" id="idLocaliser">Géolocaliser</button>
+                </div>
+
+
+                <!----------------------------- Product subcategory selected ------------------------------------------------------------>
+                <div class="affichageProduits"></div>
+
+                <div class="affichageProduits construction" >
+                    <h1 id="construction">Page en construction</h1>
+                </div>
+
+                <!----------------------------- Product page------------------------------------------------------------>
+
+                <div class="pageProduits"></div>
+
+                <!----------------------------- Cart page------------------------------------------------------------>
+                <div class="classCategoriePanier"></div>
+
+                <div id="idMonCompte">
+                    <h1>Informations sur mon compte Membre</h1>
+                    <div>
+                        <div id="idMonCompteImg"><img id="imgUtilisateur" src=""></div>
+                        <div id="idDetailsUtilisateur">
+                            <p>Nom:</p>
+                            <p>Prénom:</p>
+                            <p>Sexe:</p>
+                            <p>Langues Parlées:</p>
+                            <p>Adresse:</p>
+                            <p>Nom d'utilisateur:</p>
+                        </div>
+                        <div id="idDonneesUtilisateur">
+                            <p id="idJsonNom">Paul</p>
+                            <p id="idJsonPrenom">Paul</p>
+                            <p id="idJsonSexe">Paul</p>
+                            <p id="idJsonLangues">Paul</p>
+                            <p id="idJsonAdresse">Paul</p>
+                            <p id="idJsonUsername">Paul</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+            
+            <footer>
+                <section class="txtFooterMain">
+                    <h4>Catégories Produits</h4>
+                    <a href="#">Livres</a><br>
+                    <a href="#">Films</a><br>
+                    <a href="#">Jeux Vidéos</a>
+                </section>
+                <section class="txtFooterMain">
+                    <h4>Besoin d'aide</h4>
+                    <a href="#">Contactez-nous</a><br>
+                    <a href="#">Questions fréquentes</a><br>
+                    <a href="#">Conditions de livraisons</a>
+                </section>
+                <section class="txtFooterMain">
+                    <h4>A propos de Brooke & Co</h4>
+                    <a href="#">Qui sommes-nous?</a><br>
+                    <a href="#">Nos engagements</a><br>
+                    <a href="#">Nos services</a>
+                </section>
+                <section class="txtFooterMain">
+                    <img src="Logo/paypal.jpg" id="imgFooter" alt="" srcset="">
+                </section>
+            </footer>
+            
+        </div>
+        
+    </body>
+</html>

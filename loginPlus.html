@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brooke&Co/loginPlus</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="conteneurLogin">
+        <header>
+            <a href="loginPlus.html"><img src="Logo/logoLogin.PNG" id="imgHeader"></a>
+        </header>
+
+        
+
+        <main class="main1">
+            <div class="welcomeMessage">
+                <img src="images/imageLogin.png" id="imgWelcome">
+            </div>
+
+            <section id="formLogin">
+                <p>
+                    Bienvenue sur le site de Brooke&Co. <br/> 
+                    Votre club vous propose une panoplie de produits à prix réduits. <br/> 
+                    Connectez-vous pour en profiter dès maintenant!
+                </p>
+    
+                <h2>Déjà Membre?</h2>
+                <form action="" method="get">
+                    <div>
+                        <label for="email">Identifiant</label>
+                        <input type="email" name="email" id="email" placeholder="Nom d'utilisateur"><br/>
+                        <label for="password">Mot de passe</label>
+                        <input type="password" name="password" id="password" onkeypress="if(event.keyCode == 13) connect();" placeholder="Mot de passe"><br/>
+                        <div id="connecter">
+                            <button id="connectBtn" type="button"  onclick="connect();" >Me connecter</button>
+                            <a href="#" onclick="forgotPassword();">Mot de passe oublié?</a>
+                        </div>
+                    </div>
+                </form>
+                <a href="#" id="membreLink" onclick="afficherFormulaire();">Non membre du club? Faites votre demande d'adhésion</a>
+            </section>
+
+            <section id="inscription">
+                <h2>Formulaire d'inscription</h2>
+                <form name="formulaire" id="formInscription" action="">
+                    <div class="classHautForm">
+                        <label for="idnom">Nom</label>
+                        <input type="text" name="txtNom" id="idNom">
+                    </div>
+
+                    <div class="classHautForm">
+                        <label for="idprenom">Prenom</label>
+                        <input type="text" name="txtPrenom" id="idPrenom"> 
+                    </div>
+
+                    <div class="classSexeForm">
+                        <label for="idSexe">Sexe</label>
+                        <div><input type="radio" name="radioSexe" value="Homme" class="idSexe"> <span>Homme</span> </div>
+                        <div><input type="radio" name="radioSexe" value="Femme" class="idSexe"> <span>Femme</span></div>
+                        
+                    </div>
+                        
+
+                    <div class="classLanguesForm">
+                        <label for="">Langues</label>
+                        <div><input type="checkbox" name="chkFrançais" id="idFrancais" value="Francais"><span>Français</span></div>
+                        <div><input type="checkbox" name="chkAnglais" id="idAnglais" value="Anglais"><span>Anglais</span></div>
+                        <div><input type="checkbox" name="chkAutres" id="idAutres" value="Autres" onclick="activerAutreLangue();"><span>Autres</span></div>
+                        <div><input type="text" id="idValeurAutres" disabled="disabled"></div>
+                        
+                    </div>
+
+                    
+                    <fieldset class="classAdresse">
+                        <legend>Adresse</legend>
+                        <section id="idAdresse1">
+                            <div>
+                                <label for="idApp" class="class">App</label>
+                                <input id="idApp" type="text" name="txtApp" size="4"/>
+                            </div>
+                            <div>
+                                <label for="idNumero">Numero</label>
+                                <input id="idNumero" type="text" name="txtNumero" size="10"/>
+                            </div>
+                            <div>
+                                <label id="idLabelRue" for="idRue">Rue</label>
+                                <input id="idRue" type="text" name="txtRue" size="15"/>
+                            </div>
+
+                        </section>
+
+                        <section id="idAdresse2">
+                            <div>
+                                <label id="idLabelVille" for="idVille">Ville</label>
+                                <input id="idVille" type="text" name="txtVille"/>
+                            </div>
+                            <div>
+                                <label for="idProvince" id="idLabel1">Province</label>
+                                <select name="cboProvince" id="idProvince">
+                                    <option value="0">Choisir une province</option>
+                                    <option value="1">Alberta</option>
+                                    <option value="2">Colombie-Britannique</option>
+                                    <option value="3">Ile du Prince Edouard</option>
+                                    <option value="4">Manitoba</option>
+                                    <option value="5">Nouveau-Brunswick</option>
+                                    <option value="6">Nouvelle Ecosse</option>
+                                    <option value="7">Ontario</option>
+                                    <option value="8" selected="selected">Quebec</option>
+                                    <option value="9">Saskatchawan</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="idCodePostal" id="idLabel2">Code Postal</label>
+                                <input type="text" name="txtCodePostal" id="idCodePostal" size="8"/>
+                            </div>
+                        </section>
+                                  
+                    </fieldset>
+
+                    <div class="classBasForm">
+                        <label for="idPhoto">Votre Photo</label>
+                        <input type="file" name="txtPhoto" id="idPhoto"/>
+                    </div>
+
+                    <div class="classBasForm">
+                        <label for="idNomUtilisateur">Nom d'utilisateur</label>
+                        <input type="text" name="txtNomUtilisateur" id="idNomUtilisateur">
+                    </div>
+
+                    <div class="classBasForm">
+                        <label for="idPassword">Mot de passe</label>
+                        <input type="password" name="txtPassword" id="idPassword" >
+                    </div>
+
+                    <div class="classBasForm">
+                        <label for="idConfirmationPassword">Confirmer mot de passe</label>
+                        <input type="password" name="txtConfirmationPassword" id="idConfirmationPassword">
+                    </div>
+
+                    <div>
+                        <button id="idEnregistrer" type="button">Enregistrer</button>
+                        <button id="idAnnuler" type="reset">Annuler</button>
+                    </div> 
+                </form>
+                
+                <div id="idZoneAffichage">
+                    <b id="idInscriptionValide">Votre inscription est prise en compte. Merci</b> 
+                    <span class="close" id="idCloseForm" onclick="afficherPageLogin();">x</span><br/> <br/>
+                    Nom et prénom : <span id="idAffichageNomPrenom">XXX</span> <br/>
+                    Adresse : <span id="idAffichageAdresse">XXX</span> <br/>
+                    Sexe : <span id="idAffichageSexe">XXX</span> &nbsp;&nbsp;&nbsp;&nbsp;
+                    Langues parlées : <span id="idAffichageLangues">XXX</span> <br/>
+                    Votre nom d'utilisateur: <span id="idAffichageUsername">XXX</span> <br/><br/>
+                    Votre photo: &nbsp;
+                    <img id="idAffichagePhoto" alt="" />
+                </div>
+
+            </section>   
+
+            <section id="forgotPassword">
+                <h2>Mot de passe oublié?</h2>
+                <form action="" method="get">
+                    <div>
+                        <label for="email2">Email</label>
+                        <input type="email" name="email2" id="email2" onkeypress="if(event.keyCode == 13) afficherBulle();"><br/>
+                        <button id="passwordBtn" type="button" onclick="afficherBulle();">Obtenir nouveau mot de passe</button>
+                    </div>
+                    
+                    <div id="idInfoBulle">
+                        <p> Votre mot de passe vient de vous être envoyé par mail. <span class="close" onclick="afficherPageLogin();">x</span></p>  
+                    </div>
+                    
+                </form>
+            </section>
+        </main>
+        <footer>
+            <section class="txtFooter">
+                <h4>Catégories Produits</h4>
+                <a href="#">Livres</a><br>
+                <a href="#">Films</a><br>
+                <a href="#">Jeux Vidéos</a>         
+            </section>
+            <section class="txtFooter">
+                <h4>Besoin d'aide</h4>
+                <a href="#">Contactez-nous</a><br>
+                <a href="#">Questions fréquentes</a><br>
+                <a href="#">Conditions de livraisons</a>
+            </section>
+            <section class="txtFooter">
+                <h4>A propos de Brooke & Co</h4>
+                <a href="#">Qui sommes-nous?</a><br>
+                <a href="#">Nos engagements</a><br>
+                <a href="#">Nos services</a>
+            </section>
+            <section class="txtFooter">
+                <img src="Logo/paypal.jpg" id="imgFooter" alt="" srcset="">
+            </section>
+        </footer>
+        
+    </div>
+    
+</body>
+</html>
